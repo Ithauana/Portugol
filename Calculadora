@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+
+    inteiro A
+    inteiro B
+    caracter operacao
+    
+
+    escreva("Digite um número: ")
+    leia(A)
+
+    escreva("Digite outro número: ")
+    leia(B)
+
+    escreva("\nSelecione uma operação:\n")
+    escreva("(+)\n(-)\n(*)\n(/)\n")
+    escreva("A operação escolhida foi: ")
+    leia(operacao)
+
+      se(operacao == "+"){
+        escreva(A ," + ", B , " = ", A+B )
+      }
+      senao se(operacao == "-"){
+        escreva(A, " - ", B," = ", A-B)
+      }
+      senao se(operacao == "*"){
+        escreva(A, " x ", B," = ", A*B)
+      }
+      senao se(operacao == "/"){
+        escreva(A, " / ", B," = ", A/B)
+      }
+      senao{ escreva(" Operação inválida!")}
+      
+      
+  }
+}
