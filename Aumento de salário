@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+    real salario, porcentagem, resultado1, resultado2
+    
+
+    escreva("Digite o seu salário atual: ")
+    leia(salario)
+
+    escreva("Digite a porcentagem de aumento: ")
+    leia(porcentagem)
+
+    resultado1 = porcentagem/100
+    resultado2 = resultado1 * salario
+
+    escreva("O aumento foi de: ", resultado2)
+    escreva("O novo salário será: ",resultado2 + salario)
+
+
+  }
+}
