@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+    
+    real dolarreal = 5
+    real realdolar = 0.20
+    real valor, conversao
+    
+    escreva("Escolha o tipo de conversão:")
+    escreva("\n(1)Real para dolar\n(2)Dolar para real")
+    escreva("\nA conversão escolhida é: ")
+    leia(conversao)
+
+    escolha(conversao){
+      caso 1:
+        escreva("Real para dolar:\n")
+        escreva("Digite o valor em real para converter: ")
+        leia(valor)
+        conversao = valor * dolarreal
+        escreva(conversao, "$")
+        pare
+
+      caso 2:
+        escreva("Dolar para real: \n")
+        escreva("Digite o valor para converter: ")
+        leia(valor)
+        conversao = valor * realdolar
+        escreva(conversao," R$")
+        pare 
+
+    }
+  }
+}
