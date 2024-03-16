@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    
+    inteiro numeroum
+    inteiro numerodois
+
+    escreva("Escreva um número: ")
+    leia(numeroum)
+
+    escreva("Digite outro número: ")
+    leia(numerodois)
+
+    se(numeroum > numerodois){
+      escreva(numeroum, " é maior que ", numerodois)
+    }
+    senao se(numerodois > numeroum){
+      escreva(numerodois, " é maior que ", numeroum)
+    }
+    senao {
+      escreva(numeroum ," e ",  numerodois, " são iguais ")
+    }
+  }
+}
