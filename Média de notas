@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+  
+    real notaum
+    real notadois
+    real notatres
+    real notaquatro
+    real soma
+
+    escreva("digite a primeira nota: ")
+    leia(notaum)
+
+    escreva("digite a segunda nota: ")
+    leia(notadois)
+
+    escreva("digite a terceira nota: ")
+    leia(notatres)
+
+    escreva("digite a quarta nota: ")  
+    leia(notaquatro)
+
+    soma = notaum + notadois + notatres + notaquatro
+
+    se(soma/4 >= 7){
+    escreva("Você foi aprovado! Sua média é ", soma/4)
+    }
+    senao{escreva("Você foi reprovado! Sua média é ", soma/4)
+    }
+
+  }
+}
