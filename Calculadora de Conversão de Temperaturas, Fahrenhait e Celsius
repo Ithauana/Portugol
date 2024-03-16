@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    
+    inteiro conversao, grau, temperatura, resultadof, resultadoc
+
+   
+    escreva("\nEscolha o tipo de conversão:")
+    escreva("\n1. Fahrenhait para Celsius")
+    escreva("\n2.Celsius para F")
+    escreva("\nConversão selecionada: ")
+    leia(conversao)
+
+    escolha (conversao){
+      caso 1:
+       escreva("Fahrenhait para Celsius\n")
+       escreva("Digite a temperatura: ")
+       leia(temperatura)
+       resultadof = (temperatura - 32) / 1.8
+       escreva(resultadof,"°")
+       pare
+      caso 2:
+        escreva("Celsius para Fahrenhait\n")
+        escreva("Digite a temperatura: ")
+        leia(temperatura)
+        resultadoc = (temperatura * 1.8) +32
+        escreva(resultadoc,"°")
+       pare
+    }
