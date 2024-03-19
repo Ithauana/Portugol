@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+    
+    real altura, peso, resultado
+
+    escreva("Digite sua altura: ")
+    leia(altura)
+
+    escreva("Digite o seu peso: ")
+    leia(peso)
+
+    resultado = peso / (altura * altura)
+
+    se(resultado < 18.5){
+      escreva("Magreza")
+    }senao se(resultado >= 18.5 e resultado <=24.9){
+      escreva("Normal")
+    }senao se(resultado >=25 e resultado <=29.9){
+      escreva("Sobrepeso")
+    }senao se(resultado >=30  e resultado <=39.9){
+      escreva("Obesidade")
+    }senao{
+      escreva("Obesidade grave")
+    }
+  }
+}
