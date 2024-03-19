@@ -1,0 +1,9 @@
+programa { inclua biblioteca Util
+  funcao inicio() {
+
+   para(inteiro intervalo = 10; intervalo >= 0; intervalo--) {
+    escreva(intervalo, " ")
+    Util.aguarde(100)
+   } 
+  }
+}
