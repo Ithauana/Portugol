@@ -1,0 +1,47 @@
+programa {
+  inclua biblioteca Util
+  funcao inicio() {
+    
+    cadeia nome[2]
+    real nota1[4]
+    real nota2[4]
+    real nota3[4]
+    real nota4[4]
+    real media
+    inteiro tamanhos = Util.numero_elementos(nome)
+  
+    para(inteiro indice = 0; indice < tamanhos; indice++){
+  
+      escreva("DIGITE O NOME DO ALUNO: ")
+      leia(nome[indice])
+
+      escreva("DIGITE A NOTA 1: ")
+      leia(nota1[indice])
+
+      escreva("DIGITE A NOTA 2: ")
+      leia(nota2[indice])
+
+      escreva("DIGITE A NOTA 3: ")
+      leia(nota3[indice])
+
+      escreva("DIGITE A NOTA 4: ")
+      leia(nota4[indice])
+    }
+    para(inteiro indice = 0; indice < tamanhos; indice++){
+      
+      media = (nota1[indice] + nota2[indice] + nota3[indice] + nota4[indice]) / 4
+      escreva("\n--------------------------------------------------------\n")
+      escreva(nome[indice]," , " ,
+      nota1[indice], " , " ,
+      nota2[indice], " , " ,
+      nota3[indice], " , " ,
+      nota4[indice])
+      escreva("   MÉDIA: ", media)
+      escreva("\n--------------------------------------------------------\n")
+    }
+
+     
+
+    
+  }
+}
