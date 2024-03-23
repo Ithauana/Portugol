@@ -1,0 +1,16 @@
+programa {
+  inclua biblioteca Util
+
+  funcao inicio() {
+
+    inteiro vetor[100]
+    inteiro tamanhoDoVetor = Util.numero_elementos(vetor)
+
+    para(inteiro indice = 0; indice < tamanhoDoVetor; indice++){
+    
+    vetor[indice] = Util.sorteia(1,500)
+
+      escreva("indice[",indice,"] = ", vetor[indice],"\n")
+    }
+  }
+}
