@@ -1,0 +1,24 @@
+programa {
+  inclua biblioteca Util
+
+  funcao inicio() {
+
+    inteiro vetor[50]
+    inteiro sorteio = Util.sorteia(1,500)
+    inteiro elementos = Util.numero_elementos(vetor)
+    inteiro soma = 0
+
+    para(inteiro indice = 0; indice < elementos; indice++){
+    
+      vetor[indice] = Util.sorteia(1,500)
+
+      escreva("[",indice,"]",vetor[indice],"\n")
+
+      se(vetor[indice] % 2 == 0)
+      {
+        soma += vetor[indice]
+      }
+    }
+    escreva("A soma é: ",soma)
+  }
+}
