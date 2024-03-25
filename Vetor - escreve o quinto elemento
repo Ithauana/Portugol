@@ -1,0 +1,16 @@
+programa {
+  inclua biblioteca Util
+  funcao inicio() {
+    
+    inteiro numero[10]
+    inteiro tamanhoDoVetor = Util.numero_elementos(numero)
+
+    para(inteiro indice = 1; indice < tamanhoDoVetor; indice++ ){
+       
+       numero[indice]=Util.sorteia(0,1200)
+
+      escreva(indice,"°: ", numero[indice],"\n")  
+    }
+     escreva("O quinto elemento é ", numero[4])
+  }
+}
