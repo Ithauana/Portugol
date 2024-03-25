@@ -14,6 +14,7 @@ programa {
     }
     numero[2] = sorteado
     escreva("O valor do terceiro elemento foi modificado para:", numero[2],"\n")
+    escreva("*******Atualizção da tabela*******\n")
 
     para(inteiro indice= 1; indice < tamanhoDoVetor; indice++){
       escreva(indice,"°: ",numero[indice],"\n")
