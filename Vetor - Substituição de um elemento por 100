@@ -1,0 +1,22 @@
+programa {
+  inclua biblioteca Util
+  funcao inicio() {
+    
+    inteiro numero[5]
+    inteiro tamanhoDoVetor = Util.numero_elementos(numero)
+    inteiro sorteado = 100
+
+    para(inteiro indice= 1; indice < tamanhoDoVetor; indice++){
+
+      numero[indice] = Util.sorteia(0,200)
+
+      escreva(indice,"°:", numero[indice],"\n")
+    }
+    numero[2] = sorteado
+    escreva("O valor do terceiro elemento foi modificado para:", numero[2],"\n")
+
+    para(inteiro indice= 1; indice < tamanhoDoVetor; indice++){
+      escreva(indice,"°: ",numero[indice],"\n")
+    }
+  }
+}
