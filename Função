@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    
+    inteiro a, b, resultado
+
+    escreva(" Numero um: ")
+    leia(a)
+
+    escreva("Numero dois: ")
+    leia(b)
+
+    resultado = somar(a,b)
+
+    escreva(resultado)
+  }
+  funcao inteiro somar(inteiro a , inteiro b)
+  {
+    retorne  a + b
+  }
+}
