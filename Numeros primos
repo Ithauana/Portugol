@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num
+    inteiro num2 = 2
+
+    escreva("DIGITE UM NÚMERO: ")
+    leia(num)
+
+    se(num % num == 0 e num % 1 ==0 e num % 2 != 0){
+      escreva(num," é numero primo")
+    }senao{
+      escreva(num, "nao eh primo")
+    }
+  }
+}
