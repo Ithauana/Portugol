@@ -1,0 +1,49 @@
+programa { 
+  inteiro vaga[5] = {"-", "-", "-", "-", "-"}
+  inteiro placa[5]
+  inteiro numeroVaga
+
+  funcao inicio() {
+    exibirMenu()
+
+  }
+  
+  funcao vazio exibirMenu(){
+    escreva("\n1-Adicionar veiculo")
+    escreva("\n2-Remover veículo")
+    escreva("\n3-Listar veículo")
+
+    inteiro opcao
+    escreva("\n\nDIGITE A OPÇÃO DESEJADA:")
+    leia(opcao)
+    
+    escolha(opcao){
+      caso 1: se(opcao == 1){
+        escreva("DIGITE A PLACA: ")
+        leia(placa)
+        escreva("VAGA DESEJADA: ")
+        leia(numeroVaga)
+        addVeiculo(placa, numeroVaga, vaga)
+        }
+      pare
+
+      caso 3: se(opcao == "3"){
+        listarVaga(placa)
+      }
+    }
+  }
+  
+  funcao inteiro addVeiculo(inteiro vaga, inteiro numeroVaga, inteiro placa){
+    para(inteiro numeroVaga = 0; numeroVaga < 5; numeroVaga++){
+      vaga[numeroVaga] = placa[numeroVaga]
+      retorne vaga[numeroVaga]}
+  }
+
+  funcao cadeia listarVaga(cadeia placa){
+    para(inteiro indice; indice < 5; indice++){
+    escreva("\n************************************")
+     vaga[numeroVaga]
+    }
+    retorne
+  }
+}
