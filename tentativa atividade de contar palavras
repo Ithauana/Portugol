@@ -1,0 +1,30 @@
+programa {
+
+  inclua biblioteca Texto
+
+  funcao inicio() {
+    cadeia frase
+    escreva("ESCREVA UMA FRASE: ")
+    leia(frase)
+    
+    inteiro contador
+    contador = Texto.numero_caracteres(frase)
+    
+	se(frase == " "){
+		para(inteiro indice = 0; indice < contador; indice++){
+			caracter carac = Texto.obter_caracter(frase, indice)
+    		}
+	}
+	escreva(contador)
+  }
+  
+  funcao caracter obtcarac(cadeia frase, inteiro contador){
+  	
+  	se(frase == " "){
+		para(inteiro indice = 0; indice < contador; indice++){
+			caracter carac = Texto.obter_caracter(frase, indice)
+			contador += 1
+		}
+  }
+}
+}
