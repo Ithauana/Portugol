@@ -1,0 +1,16 @@
+programa {
+  inteiro num
+  funcao inicio() {
+    
+    escreva("DIGITE UM NÚMERO: ")
+    leia(num)
+
+    escreva(primos(num))
+  }
+    funcao inteiro primos(inteiro num){
+      para(inteiro indice = 3; indice < 10; indice++){
+      se(num % indice == 0){
+      retorne verdadeiro}
+    }
+  }
+}
