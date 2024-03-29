@@ -1,0 +1,26 @@
+programa
+{
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro sorteio = Util.sorteia(1, 100)
+		inteiro num
+
+		faca{
+			escreva("\nTENTE ADVINHAR O NUMERO: ")
+			leia(num)
+	
+			se(sorteio < num){
+				escreva("\nMUITO BAIXO")
+			}
+			senao se(sorteio > num){
+				escreva("\nMuito alto")
+			}
+			//senao se(sorteio == num){
+			//	escreva("acertou")
+			//}
+		}enquanto (sorteio == num)
+	}
+	
+}
