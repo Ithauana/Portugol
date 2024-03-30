@@ -47,3 +47,57 @@ programa {
     retorne
   }
 }
+
+
+
+att
+
+programa { 
+
+  funcao inicio() {
+    inteiro placa[5] = { 0, 0, 0, 0, 0}
+    inteiro vaga[5]
+    inteiro escolhido
+    inteiro placa2, numeroVaga
+
+    faca{
+      exibirMenu()
+      leia(escolhido)
+
+      se(escolhido == 1){
+        escreva("DIGITE A PLACA: ")
+        leia(placa2)
+        escreva("VAGA DESEJADA: ")
+        leia(numeroVaga)
+
+        placa[numeroVaga] = placa2
+      }
+      senao se(escolhido == 3){
+        para(inteiro indice = 0; indice < 5; indice++)
+        escreva(placa[indice])
+      }
+      senao se(escolhido == 2){
+        escreva("PLACA QUE DESEJA REMOVER")
+        leia(placa)
+        removerVeiculo(placa)
+
+    
+      }
+
+
+    }enquanto(escolhido !=0)
+  }
+
+  funcao vazio exibirMenu(){
+    escreva("\n1-Adicionar veiculo")
+    escreva("\n2-Remover veículo")
+    escreva("\n3-Listar veículo\n")
+  }
+  funcao removerVeiculo(inteiro removerPlaca[]){
+    para(inteiro indice = 0; indice != removerPlaca; indice++){
+      removerPlaca[indice] = 0
+    }
+  }
+}
+
+
