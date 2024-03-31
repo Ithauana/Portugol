@@ -101,3 +101,62 @@ programa {
 }
 
 
+
+
+
+
+att 2
+
+
+programa { 
+    inclua biblioteca Calendario
+
+    inteiro placa[5] = { 1, 1, 1, 1, 1}
+    inteiro vaga
+    
+    funcao vazio exibirMenu(){
+    escreva("\n1-Adicionar veiculo")
+    escreva("\n2-Remover veículo")
+    escreva("\n3-Listar veículo\n")
+  }
+  funcao inicio() {
+   
+    inteiro escolhido
+    inteiro placa2, numeroVaga
+
+    faca{
+      exibirMenu()
+      leia(escolhido)
+
+      escolha(escolhido){
+        caso 1:
+          se(escolhido == 1){
+            escreva("DIGITE A PLACA: ")
+            leia(placa2)
+            escreva("VAGA DESEJADA: ")
+            leia(numeroVaga)
+            placa[numeroVaga] = placa2
+          }
+        caso 2:
+          se(escolhido == 2){
+            escreva("PLACA QUE DESEJA REMOVER\n")
+            leia(vaga)
+            para(inteiro indice = 0; indice < 5; indice++){
+              se(placa[indice] == vaga){
+                placa[indice] = 1
+              }
+            }
+          }
+        caso 3:
+          se(escolhido == 3){
+            para(inteiro indice = 0; indice < 5; indice++)
+            escreva("-----------------------------------------\nVAGA ",indice,": \n", placa[indice],"\n")
+          }
+      } 
+    }enquanto(escolhido != 0)
+  }
+  funcao inteiro removerVeiculo(inteiro numeroPlaca){
+        numeroPlaca = 0
+        retorne numeroPlaca
+  }
+}
