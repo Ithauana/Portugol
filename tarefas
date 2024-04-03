@@ -1,0 +1,30 @@
+programa {
+  cadeia tarefas[10] = {"-", "-", "-", "-", "-", "-", "-", "-", "-", "-"}
+  inteiro incremento = 0
+  inteiro opcao
+
+  funcao inicio(){
+    exibirMenu()
+    escolhas()
+    escreva(tarefas[0])
+  }
+  funcao vazio exibirMenu(){
+    escreva("\n1. ADICIONAR TAREFA")
+    escreva("\n2. LISTAR TAREFAS A FAZER")
+    escreva("\n3. LISTAR TAREFAS FEITAS")
+    escreva("\n4. DIFERENÇA DE HORÁRIO")
+    escreva("\n0. FINALIZAR TAREFA")
+    escreva("\n\n ESCOLHA UMA OPÇÃO: ")
+    leia(opcao)
+  }
+  funcao vazio escolhas(){
+    escolha(opcao){
+      caso 1:
+        se(opcao == 1){
+          escreva("DIGITE A TAREFA: ")
+          leia(tarefas[incremento])
+          incremento =+1
+        }
+    }
+  }
+}
