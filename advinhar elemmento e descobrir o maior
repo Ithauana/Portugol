@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+     
+     inteiro elementos[10]
+     inteiro aux
+    
+     para(inteiro i = 0; i < 10 ; i++){
+     escreva("TENTE ADVINHAR O MAIOR NUMERO: ")
+     leia(elementos[i])}
+
+    para(inteiro i = 0; i < 10 ; i++){
+     escreva(elementos[i],"\n")}
+
+    se(elementos[0])
+
+    
+    
+  }
+}
