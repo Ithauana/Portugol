@@ -28,3 +28,70 @@ programa {
     }
   }
 }
+
+
+
+
+programa {
+  cadeia tarefas[10] = {"-", "-", "-", "-", "-", "-", "-", "-", "-", "-"}
+  inteiro incremento = 0
+  inteiro opcao
+  cadeia tarefaAux
+  logico depende
+
+  funcao inicio(){
+    faca{
+    exibirMenu()
+    escolhas()
+    escreva(tarefas[0])
+    }enquanto(opcao != 0)
+  }
+  funcao vazio exibirMenu(){
+    escreva("\n1. ADICIONAR TAREFA")
+    escreva("\n2. LISTAR TAREFAS A FAZER")
+    escreva("\n3. LISTAR TAREFAS FEITAS")
+    escreva("\n4. DIFERENÇA DE HORÁRIO")
+    escreva("\n0. FINALIZAR TAREFA")
+    escreva("\n\n ESCOLHA UMA OPÇÃO: ")
+    leia(opcao)
+  }
+  
+  funcao vazio escolhas(){
+    escolha(opcao){
+    caso 1:
+      se(opcao == 1){
+        escreva("DIGITE A TAREFA: ")
+        leia(tarefaAux)
+        concoesDois(tarefaAux)
+        condicoes(tarefaAux)
+
+       
+      }
+    caso 2:
+      se(opcao == 2){
+        listar()
+      }
+    }
+  }
+  funcao vazio listar(){
+    para(inteiro i = 0; i < 10; i++){
+      escreva(tarefas[i])
+    }
+  }
+  funcao vazio condicoes(cadeia tarefaAux){
+    para(inteiro i = 0; i < 10; i++){
+      se(tarefas[i] == "-")
+      depende = verdadeiro
+      tarefas[i] = tarefaAux
+      pare
+    }
+  }
+  funcao vazio concoesDois(cadeia tarefaAux){
+    para(inteiro i = 0; i < 10; i++){
+      se(tarefas[i] != "-"){
+        escreva("NÂO HA ESPAÇO")
+      }
+    }
+  }
+}
+
