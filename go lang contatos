@@ -1,0 +1,60 @@
+package util
+
+type Contato struct {
+	Nome      string
+	Sobrenome string
+	Numero    int
+}
+
+var Agenda []Contato
+
+func (c Contato) AdicionarContato() {
+	Agenda = append(Agenda, c)
+}
+
+
+
+
+package main
+
+import (
+	"awesomeProject4/util"
+	"fmt"
+)
+
+func main() {
+	for {
+		var opcao int
+
+		fmt.Println("1.ADICIONAR CONTATO")
+		fmt.Println("2.LISTAR CONTATOS")
+		fmt.Println("3.REMOVER CONTATO")
+		fmt.Println("0. SAIR DO PROGRAMA")
+		fmt.Scan(&opcao)
+
+		if opcao == 0 {
+			break
+		}
+
+		switch opcao {
+
+		case 1:
+			var contatoo util.Contato
+
+			fmt.Println("DIGITE O NOME:")
+			fmt.Scan(&contatoo.Nome)
+
+			fmt.Println("DIGITE O SOBRENOME:")
+			fmt.Scan(&contatoo.Sobrenome)
+
+			fmt.Println("DIGITE O NÚMERO:")
+			fmt.Scan(&contatoo.Numero)
+
+			contatoo.AdicionarContato()
+			break
+		case 2:
+			fmt.Println(util.Agenda)
+			break
+		}
+	}
+}
